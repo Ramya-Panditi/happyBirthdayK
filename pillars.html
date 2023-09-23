@@ -258,7 +258,6 @@
             position: absolute;
             top:60%;
             opacity: 10%;
-            
         }
         .circle{
             position: absolute;
@@ -436,28 +435,10 @@
         <div class="circle  rounded-circle" id="circle-5">LOVE</div>
     </div>
 </div>
-    <audio controls autoplay class = "audio-file">
+    <audio id = "audio" controls autoplay class = "audio-file">
         <source src="Bound_To_Falling_In_Love_-_Bgm_!_English_V1.mp3" type="audio/mpeg">
     </audio>
-    
-<script>
-    function handleAlertInput() {
-            // Display an alert to get user input
-            const userInput = prompt("Enter 'play' to start the song:");
-            
-            // Check if the user input is equal to "play"
-            if (userInput === "play") {
-                // Get the audio element and play the audio
-                const audioElement = document.querySelector(".audio-file");
-                if (audioElement) {
-                    audioElement.play();
-                }
-            }
-        }
 
-        // Call the function when the page loads or at a specific event
-        window.onload = handleAlertInput;
-</script>
 
 </body>
 </html>

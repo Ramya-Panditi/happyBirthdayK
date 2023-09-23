@@ -255,9 +255,9 @@
             
         }
         .audio-file{
-            /* position: absolute;
-            top:60%; */
-            visibility: hidden;
+            position: absolute;
+            top:60%;
+            opacity: 10%;
             
         }
         .circle{
@@ -441,6 +441,22 @@
     </audio>
     
 <script>
+    function handleAlertInput() {
+            // Display an alert to get user input
+            const userInput = prompt("Enter 'play' to start the song:");
+            
+            // Check if the user input is equal to "play"
+            if (userInput === "play") {
+                // Get the audio element and play the audio
+                const audioElement = document.querySelector(".audio-file");
+                if (audioElement) {
+                    audioElement.play();
+                }
+            }
+        }
+
+        // Call the function when the page loads or at a specific event
+        window.onload = handleAlertInput;
 </script>
 
 </body>
